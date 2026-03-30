@@ -1,0 +1,47 @@
+2026-03-30 15:18:31,962 - INFO - Acquiring Azure AD token for Databricks...
+2026-03-30 15:18:32,444 - INFO - Connecting to Databricks SQL Warehouse...
+2026-03-30 15:18:33,572 - INFO - Received status code 400 for POST request
+2026-03-30 15:18:33,572 - WARNING - Token exchange failed, using external token: 'access_token'
+2026-03-30 15:18:34,335 - INFO - Received status code 200 for POST request
+2026-03-30 15:18:34,335 - INFO - HTTP Response with status code 200, message: OK
+2026-03-30 15:18:34,336 - INFO - Successfully opened session 01f12c1d-9e0b-1fe5-a0ae-932510317a43
+2026-03-30 15:18:34,505 - INFO - Received status code 200 for GET request
+2026-03-30 15:18:34,507 - INFO - Executing query: 
+    SELECT 
+        Case_Number, 
+        Case_Date, 
+        Case_Type, 
+        Title, 
+        Description, 
+        Cause_Description, 
+        Country, 
+        Shore, 
+        Location, 
+        Location_Full_Path, 
+        Project, 
+        Project_Full_Path, 
+        Unit_In_Charge, 
+        Unit_In_Charge_Full_Path, 
+        Person_In_Charge,
+        CAST(Causes as STRING) AS Causes,
+        CAST(Actual_Loss as STRING) AS Actual_Loss,
+        Cast(Potential_Loss as STRING) AS Potential_Loss
+    FROM dp_prod.synergi.gd_gcp_hse_intelligence
+    
+2026-03-30 15:18:35,290 - INFO - Received status code 200 for POST request
+2026-03-30 15:18:35,290 - INFO - HTTP Response with status code 200, message: OK
+2026-03-30 15:18:38,347 - INFO - Received status code 200 for GET request
+2026-03-30 15:18:38,347 - INFO - CloudFetch download completed: 2.7759 MB/s, 8854338 bytes in 3.042s from https://saweuprdpdbrix01.blob.core.windows.net/jobs/6325900629617917/sql/2026-03-30/05/results_2026-03-30T05:10:43Z_9218c08a-7473-45b5-b597-565581769105
+2026-03-30 15:18:38,798 - INFO - Received status code 200 for GET request
+2026-03-30 15:18:38,799 - INFO - CloudFetch download completed: 2.9161 MB/s, 10685193 bytes in 3.494s from https://saweuprdpdbrix01.blob.core.windows.net/jobs/6325900629617917/sql/2026-03-30/05/results_2026-03-30T05:10:42Z_9e9fd2f1-c6bf-4fd0-a223-513e14f2d550
+2026-03-30 15:18:39,266 - INFO - Received status code 200 for POST request
+2026-03-30 15:18:39,267 - INFO - HTTP Response with status code 200, message: OK
+2026-03-30 15:18:39,333 - INFO - Retrieved 28912 rows. Starting BigQuery load.
+2026-03-30 15:18:39,432 - INFO - Starting BigQuery Audit...
+2026-03-30 15:18:55,112 - INFO - SUCCESS: Loaded 28912 rows into s7-dev-ai-hseq.subsea_hseq_analytics_dev.synergi_gd_gcp_hse_intelligence
+2026-03-30 15:18:55,113 - INFO - Closing BigQuery Audit (Success)...
+2026-03-30 15:19:02,662 - INFO - Closing session 01f12c1d-9e0b-1fe5-a0ae-932510317a43
+2026-03-30 15:19:02,935 - INFO - Received status code 200 for POST request
+2026-03-30 15:19:02,935 - INFO - HTTP Response with status code 200, message: OK
+2026-03-30 15:19:02,942 - INFO - Databricks connection closed.
+2026-03-30 15:19:03,570 - INFO - Received status code 200 for POST request

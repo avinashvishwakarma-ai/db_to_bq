@@ -1,0 +1,22 @@
+# Security: Ignore environment variables and secrets
+.env
+*.env
+.secrets
+
+# Python: Ignore local virtual environments and cache
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Version Control
+.git
+.gitignore
+
+# IDE / OS Metadata
+.vscode/
+.idea/
+.DS_Store
