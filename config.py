@@ -9,8 +9,8 @@ SP_NAME_SECRET = "databricks-sp-name"
 
 
 # Databricks
-DATABRICKS_HOST = "https://adb-6325900629617917.17.azuredatabricks.net"
-DATABRICKS_HTTP_PATH = "/sql/1.0/warehouses/a21356a1b34993f2"
+DATABRICKS_HOST = "https://adb-632590062****.azuredatabricks.net"
+DATABRICKS_HTTP_PATH = "/sql/1.0/warehouses/******"
 
 # BigQuery
 BQ_PROJECT = "your-gcp-project-id"
